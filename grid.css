@@ -1,0 +1,45 @@
+
+.container{
+    height:100vh ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background: black;
+   
+}
+.grid{
+    display: grid;
+    height: 60vh;
+    width: 500px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 8px;
+    grid-template-areas:
+    "one one one two two"
+    "one one one two two"
+    "three three four four four"
+    "three three five five five"
+}
+.item-1{
+    grid-area: one;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-2{
+    grid-area: two;
+    background-color: red;
+}
+.item-3{
+    grid-area: three;
+    background-color: yellow;
+}
+.item-4{
+    grid-area: four;
+    background-color: green;
+}
+.item-5{
+    grid-area: five;
+    background-color: pink;
+}

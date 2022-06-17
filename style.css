@@ -1,0 +1,85 @@
+body{
+    background:  hsl(0, 0%, 95%);  
+    font-family: 'Lexend Deca', sans-serif; 
+    font-size: 15px;
+    font-weight: 400;
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card-container{
+  height: 100vh;
+}
+.card{
+    padding:40px
+}
+.card-left{
+    background:  hsl(31, 77%, 52%);
+   
+}
+.card-middle{
+    background: hsl(184, 100%, 22%);
+}
+.card-right{
+    background: hsl(179, 100%, 13%);
+
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75)
+}
+h2,input{
+   color:hsl(0, 0%, 95%)
+}
+input{
+    height:40px;
+    width: 100px;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: transparent;
+}
+.card-left input{
+    color: hsl(31, 77%, 52%)
+}
+.card-left input:hover{
+   background: transparent;
+   color:hsl(0, 0%, 95%);
+   border: 2px solid hsl(0, 0%, 95%)
+}
+
+.card-middle input{
+     color: hsl(184, 100%, 22%);
+}
+.card-middle input:hover{
+   background: transparent;
+   color:hsl(0, 0%, 95%);
+   border: 2px solid hsl(0, 0%, 95%)
+}
+.card-right input{
+    color: hsl(179, 100%, 13%);
+}
+.card-right input:hover{
+   background: transparent;
+   color:hsl(0, 0%, 95%);
+   border: 2px solid hsl(0, 0%, 95%)
+}
+
+@media screen and (min-width:450px){
+   .card-container{
+    display: flex;
+    width: 790px;
+    height: 50vh;  
+}
+.card-left{
+    background:  hsl(31, 77%, 52%);
+    border-radius: 10px 0px 0px 10px;
+}
+.card-right{
+    background: hsl(179, 100%, 13%);
+    border-radius: 0px 10px 10px 0px;
+}
+}
